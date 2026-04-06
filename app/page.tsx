@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import LoadingScreen from '@/components/LoadingScreen';
 import ScrollCanvas from '@/components/ScrollCanvas';
