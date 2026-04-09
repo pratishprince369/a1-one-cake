@@ -43,8 +43,8 @@ export default function Navbar() {
       >
         <div className="relative w-[100px] h-[56px] md:w-[130px] md:h-[72px] lg:w-[150px] lg:h-[84px]">
           <Image
-            src="https://6ix-donutz.com/wp-content/uploads/2024/12/removebg-logo-e1735322689341.png"
-            alt="6ix Donutz Logo"
+            src="https://res.cloudinary.com/dfdudj4iy/image/upload/v1775000630/a-one-logo_rfrpic.png"
+            alt="A-One Logo"
             fill
             className="object-contain"
             referrerPolicy="no-referrer"

@@ -5,13 +5,11 @@ import Navbar from '@/components/Navbar';
 import LoadingScreen from '@/components/LoadingScreen';
 import ScrollCanvas from '@/components/ScrollCanvas';
 import TextOverlay from '@/components/TextOverlay';
-import TrustStrip from '@/components/TrustStrip';
-import AboutSection from '@/components/AboutSection';
-import DripsSection from '@/components/DripsSection';
-import ShotBarSection from '@/components/ShotBarSection';
-import FeaturesSection from '@/components/FeaturesSection';
-import ProcessSection from '@/components/ProcessSection';
-import ParallaxQuote from '@/components/ParallaxQuote';
+import CollectionsSection from '@/components/CollectionsSection';
+import BestSellersSection from '@/components/BestSellersSection';
+import CustomCakeSection from '@/components/CustomCakeSection';
+import StatsSection from '@/components/StatsSection';
+import GallerySection from '@/components/GallerySection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -89,42 +87,29 @@ export default function HomePage() {
         {/* ── Trust strip — after hero ────────────────────────────── */}
         <div className="relative" style={{ zIndex: 10 }}>
           <ScrollReveal direction="up" distance={50}>
-            <TrustStrip />
+            <CollectionsSection />
           </ScrollReveal>
 
-          {/* About — slide up */}
           <ScrollReveal direction="up" distance={90} delay={0.05}>
-            <AboutSection />
+            <BestSellersSection />
           </ScrollReveal>
 
-          {/* Menu — dive up */}
-          <ScrollReveal direction="up" distance={100} delay={0.08}>
-            <DripsSection />
-          </ScrollReveal>
-
-          {/* Catering — slide from right */}
           <ScrollReveal direction="right" distance={80} delay={0.05}>
-            <ShotBarSection />
+            <CustomCakeSection />
           </ScrollReveal>
 
-          {/* Features — dive up */}
           <ScrollReveal direction="up" distance={80}>
-            <FeaturesSection />
+            <StatsSection />
           </ScrollReveal>
 
-          {/* How It Works — slide up */}
-          <ScrollReveal direction="up" distance={90} delay={0.05}>
-            <ProcessSection />
-          </ScrollReveal>
-
-          {/* Parallax CTA — slide up */}
-          <ScrollReveal direction="up" distance={60}>
-            <ParallaxQuote />
-          </ScrollReveal>
-
-          {/* Reviews — dive up */}
+          {/* Testimonials — dive up */}
           <ScrollReveal direction="up" distance={80} delay={0.05}>
             <TestimonialsSection />
+          </ScrollReveal>
+
+          {/* Gallery — slide up */}
+          <ScrollReveal direction="up" distance={80}>
+            <GallerySection />
           </ScrollReveal>
 
           {/* Contact — slide up */}

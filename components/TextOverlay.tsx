@@ -5,12 +5,13 @@ interface SectionConfig {
   endPct: number;
   position: 'bottom-left' | 'top-right' | 'center';
   label: string;
-  headline: string;
-  headlinePx: number;
-  headlineWeight: number;
+  headline?: string;
+  headlinePx?: number;
+  headlineWeight?: number;
   headlineItalic?: boolean;
   headlineGold?: boolean;
   headlineColor?: string;
+  logoUrl?: string;
   subtext: string;
   showCTA?: boolean;
 }
@@ -21,10 +22,7 @@ const SECTIONS: SectionConfig[] = [
     endPct: 22,
     position: 'center',
     label: 'Hot & Fresh Mini Donuts',
-    headline: '6IX\nDONUTZ',
-    headlinePx: 96,
-    headlineWeight: 900,
-    headlineGold: true,
+    logoUrl: 'https://res.cloudinary.com/dfdudj4iy/image/upload/v1775000630/a-one-logo_rfrpic.png',
     subtext: 'Freshly made mini donuts — golden, warm, and made to order.',
     showCTA: true,
   },
@@ -186,7 +184,21 @@ export default function TextOverlay({ progress }: Props) {
               </span>
             )}
 
-            <span style={getHeadlineStyle(section)}>{section.headline}</span>
+            {section.logoUrl ? (
+              <img
+                src={section.logoUrl}
+                alt="A-One Logo"
+                style={{
+                  maxWidth: '350px',
+                  width: '90%',
+                  margin: section.position === 'center' ? '0 auto' : '0',
+                  filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.5))',
+                  display: 'block'
+                }}
+              />
+            ) : (
+              section.headline && <span style={getHeadlineStyle(section)}>{section.headline}</span>
+            )}
 
             <p
               style={{

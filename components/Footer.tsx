@@ -27,8 +27,8 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-5 relative w-[120px] h-[70px] md:w-[140px] md:h-[80px]">
               <Image
-                src="https://6ix-donutz.com/wp-content/uploads/2024/12/removebg-logo-e1735322689341.png"
-                alt="6ix Donutz Logo"
+                src="https://res.cloudinary.com/dfdudj4iy/image/upload/v1775000630/a-one-logo_rfrpic.png"
+                alt="A-One Logo"
                 fill
                 className="object-contain object-left"
                 referrerPolicy="no-referrer"

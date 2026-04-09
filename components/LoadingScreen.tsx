@@ -34,8 +34,8 @@ export default function LoadingScreen({ progress, onComplete }: Props) {
       <div className="flex flex-col items-center mb-10 relative z-10">
         <div className="relative w-[150px] h-[90px] md:w-[200px] md:h-[120px] mb-8">
           <Image
-            src="https://6ix-donutz.com/wp-content/uploads/2024/12/removebg-logo-e1735322689341.png"
-            alt="6ix Donutz Logo"
+            src="https://res.cloudinary.com/dfdudj4iy/image/upload/v1775000630/a-one-logo_rfrpic.png"
+            alt="A-One Logo"
             fill
             className="object-contain"
             referrerPolicy="no-referrer"

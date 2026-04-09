@@ -5,21 +5,21 @@ import { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
-    text: '"The donuts were incredible, and the service couldn\'t have been better. I tried the cinnamon sugar and the Nutella drizzle — both were absolutely heavenly. Highly recommend!"',
+    text: '"The custom cake was incredible, and the design couldn\'t have been better. We went with the Strawberry flavor and it was absolutely heavenly. Highly recommend!"',
     author: 'Amir B.',
-    treatment: 'Lil Pack',
+    treatment: 'Custom Cake',
     initials: 'AB',
   },
   {
-    text: '"Booked 6ix Donutz for our corporate event and our employees went CRAZY for them. The donuts were made right in front of everyone and the freshness was unreal. Can\'t wait to book again."',
+    text: '"Booked A-One Cake for our corporate event and our employees went CRAZY for the catering. The presentation was gorgeous and the freshness was unreal. Can\'t wait to book again."',
     author: 'Jessica M.',
-    treatment: 'Jumbo Pack',
+    treatment: 'Event Catering',
     initials: 'JM',
   },
   {
-    text: '"The best mini donuts I\'ve ever had, no contest. The way they make them fresh to order is next level. We got the Petite pack and it was gone in minutes. Bring more next time!"',
+    text: '"The best cake I\'ve ever had, no contest. The artisanal process is next level. We got the Choco Lava and it was gone in minutes. Bring more next time!"',
     author: 'Nora L.',
-    treatment: 'Petite Pack',
+    treatment: 'Choco Lava',
     initials: 'NL',
   },
 ];
@@ -36,7 +36,8 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative z-10 py-20 md:py-28 lg:py-40 px-4 md:px-10 lg:px-24 overflow-hidden" id="reviews" style={{ background: 'rgba(0,0,0,0.85)' }}>
+    <section ref={sectionRef} className="relative z-10 py-20 md:py-28 lg:py-40 px-4 md:px-10 lg:px-24 overflow-hidden" id="reviews" style={{ background: 'transparent' }}>
+      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
       <motion.div
         style={{ y: quoteY, color: 'rgba(200,151,58,0.04)' }}
         className="absolute top-0 left-1/2 -translate-x-1/2 font-serif text-[clamp(100px,25vw,420px)] font-black leading-none pointer-events-none select-none will-change-transform"
@@ -47,7 +48,7 @@ export default function TestimonialsSection() {
       <div className="max-w-[820px] mx-auto relative z-10">
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="w-6 h-[1px] bg-[#C8973A]" />
-          <span className="font-sans text-[10px] font-bold tracking-[0.38em] uppercase text-[#C8973A]">Customer Reviews</span>
+          <span className="font-sans text-[10px] font-bold tracking-[0.38em] uppercase text-[#C8973A]">Client Reviews</span>
           <div className="w-6 h-[1px] bg-[#C8973A]" />
         </div>
         <h2 className="font-serif text-[clamp(26px,5vw,54px)] font-black text-white text-center mb-10 md:mb-16">
@@ -58,7 +59,7 @@ export default function TestimonialsSection() {
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
           }}>
-            Customers Say
+            Clients Say
           </span>
         </h2>
 

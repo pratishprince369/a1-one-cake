@@ -8,22 +8,12 @@ interface Props {
 }
 
 // Total frames available
-const V1_FRAMES = 280;
-const V2_FRAMES = 212;
-const TOTAL_FRAMES = V1_FRAMES + V2_FRAMES; // 492
+const TOTAL_FRAMES = 917;
 
 function getFrameSrc(index: number): string {
   // index is 0-based
-  if (index < V1_FRAMES) {
-    // v1_frame_0001 to v1_frame_0280
-    const num = String(index + 1).padStart(4, '0');
-    return `/frames/v1_frame_${num}.jpg`;
-  } else {
-    // v2_frame_0001 to v2_frame_0212
-    const v2Index = index - V1_FRAMES;
-    const num = String(v2Index + 1).padStart(4, '0');
-    return `/frames/v2_frame_${num}.jpg`;
-  }
+  const num = String(index + 1).padStart(4, '0');
+  return `/frames/v1_frame_${num}.jpg?v=2`;
 }
 
 export default function ScrollCanvas({ progress, onProgress }: Props) {
