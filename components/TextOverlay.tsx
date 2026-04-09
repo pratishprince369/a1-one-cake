@@ -21,32 +21,32 @@ const SECTIONS: SectionConfig[] = [
     startPct: 0,
     endPct: 22,
     position: 'center',
-    label: 'Hot & Fresh Mini Donuts',
+    label: 'Premium & Custom Cakes',
     logoUrl: 'https://res.cloudinary.com/dfdudj4iy/image/upload/v1775000630/a-one-logo_rfrpic.png',
-    subtext: 'Freshly made mini donuts — golden, warm, and made to order.',
+    subtext: 'Artistry in Every Slice — baked fresh, customized, and made to order.',
     showCTA: true,
   },
   {
     startPct: 30,
     endPct: 55,
     position: 'bottom-left',
-    label: 'Mini Donuts Made Fresh',
+    label: 'Custom Cakes Made Fresh',
     headline: 'Made Fresh\nTo Order.',
     headlinePx: 78,
     headlineWeight: 700,
     headlineColor: '#FFFFFF',
-    subtext: 'Halal • Fresh • Egg Free — every batch made just for you.',
+    subtext: 'Flavoursome • Fresh • Custom — every masterpiece tailored just for you.',
   },
   {
     startPct: 60,
     endPct: 78,
     position: 'top-right',
-    label: 'Our Menu',
-    headline: 'Choose\nYour Pack.',
+    label: 'Our Selection',
+    headline: 'Explore\nOur Cakes.',
     headlinePx: 84,
     headlineWeight: 700,
     headlineGold: true,
-    subtext: 'Lil Pack · Petite Pack · Jumbo Pack — sweet perfection in every size.',
+    subtext: 'Best Sellers · Wedding Cakes · Birthday Cakes — sweet perfection for any occasion.',
   },
   {
     startPct: 84,
@@ -57,7 +57,7 @@ const SECTIONS: SectionConfig[] = [
     headlinePx: 96,
     headlineWeight: 800,
     headlineColor: '#FFFFFF',
-    subtext: 'Fresh, warm, golden — exactly the way you want them.',
+    subtext: 'Fresh, beautiful, golden — exactly the way you want them.',
     showCTA: true,
   },
 ];
@@ -219,11 +219,13 @@ export default function TextOverlay({ progress }: Props) {
             </p>
 
             {section.showCTA && (
-              <div style={{ marginTop: '32px', display: 'flex', justifyContent: section.position === 'center' ? 'center' : 'flex-start', gap: '16px', flexWrap: 'wrap' }}>
+              <div 
+                className={`flex flex-col sm:flex-row gap-4 mt-8 ${section.position === 'center' ? 'items-center justify-center' : 'items-start justify-start'}`}
+              >
                 <a
-                  href="#order"
+                  href="#contact"
+                  className="inline-flex text-center justify-center"
                   style={{
-                    display: 'inline-block',
                     padding: '14px 36px',
                     background: 'linear-gradient(135deg, #E4B863, #C8973A)',
                     color: '#000000',
@@ -238,12 +240,12 @@ export default function TextOverlay({ progress }: Props) {
                     transition: 'all 0.3s ease',
                   }}
                 >
-                  Order Now →
+                  Book Your Cake →
                 </a>
                 <a
-                  href="#menu"
+                  href="#collections"
+                  className="inline-flex text-center justify-center"
                   style={{
-                    display: 'inline-block',
                     padding: '14px 36px',
                     background: 'transparent',
                     color: '#FFFFFF',

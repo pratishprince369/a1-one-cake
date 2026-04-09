@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: '6ix Donutz | Hot & Fresh Mini Donuts',
-  description: 'Hot & Fresh Mini Donuts made to order. Experience the best mini donuts — halal, fresh, egg-free. Order now for events, catering, and walk-up service.',
-  keywords: '6ix donutz, mini donuts, fresh donuts, halal donuts, catering, donut shop',
+  title: 'A-One Cake | Artistry in Every Slice',
+  description: 'Custom baked cakes for every occasion. Best Sellers, Collections, and Custom Orders. Where Art Meets Taste.',
+  keywords: 'a one cake, custom cakes, wedding cakes, birthday cakes, best seller cakes, order cake online',
 }
 
 export const viewport = {

@@ -93,7 +93,7 @@ export default function Navbar() {
             animate={{ opacity: 1, clipPath: 'inset(0 0 0% 0)' }}
             exit={{ opacity: 0, clipPath: 'inset(0 0 100% 0)' }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 bg-black/97 backdrop-blur-xl flex flex-col items-center justify-center gap-6 z-[105]"
+            className="fixed inset-0 bg-black/95 backdrop-blur-3xl flex flex-col items-center justify-center gap-6 z-[105]"
           >
             {/* Gold glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-[radial-gradient(circle,rgba(200,151,58,0.12)_0%,transparent_70%)] pointer-events-none" />
